@@ -1,45 +1,26 @@
-# 簡單專案
+# BMI計算機
 
-## 操作方式
+![BMI計算機](https://i.imgur.com/QJaJ2Cc.jpg)
 
-刪除git：`sudo rm -rf .git`
+## Demo
 
-基本安裝：`npm run install`
+[https://HaroldZhen.github.io/BmiCalculator](https://HaroldZhen.github.io/BmiCalculator)
 
-輸出建立檔案：`npm run build`
+## 簡介
+此為前端練習作業
 
-發佈到GitHub Page：`npm run deploy`
+## 主要練習
+- 原生JS
+- 手刻前台css
 
+## 功能操作
+計算 BMI
+判斷 BMI 範圍
+重新輸入數值
+變更結果顏色
+印出紀錄日期、抓取時間
+儲存 LocalStorage 紀錄 BMI 等數值
+刪除紀錄
 
-### package.json
-
-```
-{
-  "name": "ABCGO",//應用程式名稱
-  ...
-  "homepage": "https://xxxxx.github.io/ABCGO", //發佈的網址
-  "dependencies": {
-    "gh-pages": "^3.1.0",
-    "recursive-copy": "^2.0.11"
-  },
-  "scripts": {
-    "build": "node build.js",
-    "deploy": "gh-pages -d build"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:xxxxxx/yyyyyyy.git" //GitHub地址
-  }
-}
-```
-
-### VSCODE Live Sass的設定
-```
-  "liveSassCompile.settings.formats": [
-      {
-          "format": "expanded",
-          "extensionName": ".css",
-          "savePath": "/src/style/css"
-      }
-  ],
-```
+## 版型來源
+-  六角學院 - BMI設計稿

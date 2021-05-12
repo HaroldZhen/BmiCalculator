@@ -1,18 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>簡單版型</title>
+  <title>BMI計算機</title>
   <link rel="stylesheet" href="./style/css/main.css">
 </head>
 
 <body>
-  <div>
-    hi
+  <div class="header">
+    <div class="wrap">
+      <div class="logo">
+        <img src="./images/BMICLogo.svg" alt="BMI Calculator">
+      </div>
+      <div class="infos">
+        <div class="form-group">
+          <label for="height">身高 cm</label>
+          <input type="number" class="input" name="height" id="height" placeholder="請輸入身高">
+        </div>
+        <div class="form-group">
+          <label for="weight">體重 kg</label>
+          <input type="number" class="input" name="weight" id="weight" placeholder="請輸入體重">
+        </div>
+        <span class="alertMsg"></span>
+      </div>
+      <div class="btnBox">
+        <button class="btn-calculator" id="calculator">看結果</button>
+        <div class="result underweight" id="resultBox">
+          <div class="bmi-num" id="bmi-number">34.72</div>
+          <div class="bmi-messages" id="bmi-messages">輕度肥胖</div>
+          <a href="#" class="icon_loop resetBtn"><i class="material-icons">autorenew</i></a>
+        </div>
+      </div>
+    </div>
   </div>
-  <script type="module" src="./js/all.js"></script>
+  <div class="content">
+    <div class="wrap">
+      <h3>BMI 紀錄</h3>
+      <ul class="records">
+      </ul>
+      <button class="btn clearBtn" id="clearBtn"><i class="material-icons">cancel</i>刪除所有紀錄</button>
+    </div>
+  </div>
+  <div class="footer">
+    <div><img src="./images/BMICLogo_d.svg" alt="BMI Calculator"></div>
+  </div>
+  <script src="./scripts/all.js"></script>
 </body>
-
 </html>

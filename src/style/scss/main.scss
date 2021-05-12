@@ -1,4 +1,4 @@
-@import '_reset';
-.wrap {
-  color: #fff;
-}
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import './reboot/_reset';
+@import './variables/_variables';
+@import './_index.scss';
