@@ -80,6 +80,11 @@ function renderList(sourceData) {
   </li>`;
   });
   recordList.innerHTML = template;
+  if (sourceData.length === 0) {
+    clearBtn.style.display = 'none';
+  } else {
+    clearBtn.style.display = 'block';
+  }
 }
 
 function deleteItem(index) {
